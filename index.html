@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Layout Examples</title>
+    <link rel="stylesheet" href="css/pure/pure-min.css">
+    <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
+    <style>
+        * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+        body { margin: 0; color: #555; font-family: Helvetica, Arial, sans-serif; line-height: 1.6; }
+
+        a { text-decoration: none; color: rgb(61, 146, 201); }
+        a:hover, a:focus { text-decoration: underline; }
+
+        #layout { padding: 0; }
+
+        .sidebar {
+            background: rgb(61, 79, 93);
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin: 3em auto;
+        }
+
+        .brand-title { margin: 0; text-transform: uppercase; color: #fff; }
+        .brand-tagline { margin: 0; font-weight: 300; color: rgb(176, 202, 219); }
+
+        .nav-list { margin: 0; padding: 0; list-style: none; }
+        .nav-item { display: inline-block; }
+        .nav-item a {
+            display: inline-block;
+            background: transparent;
+            border: 2px solid rgb(176, 202, 219);
+            color: #fff;
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 85%;
+            border-radius: 2px;
+        }
+        .nav-item a:hover, .nav-item a:focus {
+            border-color: rgb(61, 146, 201);
+            text-decoration: none;
+        }
+
+        .content { padding: 2em 1em 0; }
+
+        .content-subhead {
+            text-transform: uppercase;
+            color: #aaa;
+            border-bottom: 1px solid #eee;
+            padding: 0.4em 0;
+            font-size: 80%;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+        }
+
+        .layout-card {
+            display: block;
+            padding: 1.2em 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            text-decoration: none;
+        }
+        .layout-card:last-child { border-bottom: none; }
+        .layout-card:hover { background: #fafafa; text-decoration: none; padding-left: 0.5em; transition: padding 0.1s; }
+        .layout-card h2 { margin: 0 0 0.2em; font-size: 1.3em; color: #222; }
+        .layout-card p { margin: 0; font-size: 0.9em; color: #888; }
+
+        .pdf-list { list-style: none; margin: 0; padding: 0; }
+        .pdf-list li { padding: 0.9em 0; border-bottom: 1px solid #eee; }
+        .pdf-list li:last-child { border-bottom: none; }
+        .pdf-list a { color: #222; font-size: 1em; }
+        .pdf-list a:hover { color: rgb(61, 146, 201); text-decoration: none; }
+        .pdf-meta { display: block; font-size: 0.85em; color: #aaa; margin-top: 2px; }
+
+        .footer { padding: 1em 0; }
+        .footer a { color: #ccc; font-size: 80%; }
+        .footer .pure-menu a:hover, .footer .pure-menu a:focus { background: none; }
+
+        @media (min-width: 48em) {
+            .content { padding: 2em 3em 0; margin-left: 25%; }
+            .header { margin: 80% 2em 0; text-align: right; }
+            .sidebar { position: fixed; top: 0; bottom: 0; }
+            .footer { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">To Do</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <!-- <li class="nav-item"><a href="layouts/">All Layouts</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <div class="posts" style="padding: 0 0 2em;">
+                <h1 class="content-subhead">Documents</h1>
+                <ul class="pdf-list">
+                    <li>
+                        <a href="assets/pdf/AI Tools reco 7202026.pdf" target="_blank">AI Tools Recommendation</a>
+                        <span class="pdf-meta">July 20, 2026 &mdash; PDF</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

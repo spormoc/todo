@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Examples &ndash; Pure CSS</title>
+    <link rel="stylesheet" href="../css/pure/pure-min.css">
+    <link rel="stylesheet" href="../css/pure/grids-responsive-min.css">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Helvetica, Arial, sans-serif; color: #555; margin: 0; }
+        .layouts { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+        .layout-card { border: 1px solid #ddd; border-radius: 4px; padding: 16px 24px; text-decoration: none; color: #333; width: 200px; }
+        .layout-card:hover { background: #f5f5f5; border-color: #aaa; }
+        .layout-card h2 { margin: 0 0 6px; font-size: 1em; }
+        .layout-card p { margin: 0; font-size: 0.85em; color: #888; }
+        .content { padding: 2em; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Layout Examples</h1>
+        <p>Click a layout to preview it.</p>
+        <div class="layouts">
+            <a class="layout-card" href="blog/">
+                <h2>Blog</h2>
+                <p>Sidebar + post list</p>
+            </a>
+            <a class="layout-card" href="email/">
+                <h2>Email</h2>
+                <p>Email client UI</p>
+            </a>
+            <a class="layout-card" href="gallery/">
+                <h2>Gallery</h2>
+                <p>Photo grid layout</p>
+            </a>
+            <a class="layout-card" href="marketing/">
+                <h2>Marketing</h2>
+                <p>Landing page</p>
+            </a>
+            <a class="layout-card" href="pricing/">
+                <h2>Pricing</h2>
+                <p>Pricing table</p>
+            </a>
+            <a class="layout-card" href="side-menu/">
+                <h2>Side Menu</h2>
+                <p>Collapsible sidebar</p>
+            </a>
+            <a class="layout-card" href="tucked-menu/">
+                <h2>Tucked Menu</h2>
+                <p>Horizontal scrollable menu</p>
+            </a>
+            <a class="layout-card" href="tucked-menu-vertical/">
+                <h2>Tucked Menu Vertical</h2>
+                <p>Horizontal-to-vertical menu</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
